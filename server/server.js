@@ -8,7 +8,9 @@ const corseOptions = {
 app.use(cors(corseOptions));
 
 app.get("/api", (req, res) => {
-  res.json({ fruits: ["banana", "apple", "cherry", "strawberry"] });
+  res.json({
+    fruits: ["banana", "apple", "cherry", "strawberry", "mellon", "blueberry"],
+  });
 });
 
 app.listen(8080, () => {
